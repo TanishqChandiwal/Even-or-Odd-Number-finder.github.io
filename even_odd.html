@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<style>
+			body{
+				 font-size:22px;
+			}
+			
+			input{
+				height:30px;
+				width:200px;
+			}
+			
+			button{
+				   height:30px;
+				   width:120px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div> 
+			<input type="number" placeholder="Enter A Number" id="even"> </input>
+			
+			<div> <button type="submit" onclick="abc()"> </button> </div>
+			<script>
+					function abc(){
+								   var a = document.getElementById("even").value;
+								   var b = 2;
+								   var c = a/b;
+								   
+								   if(c %= 1){
+											  document.getElementById('hello').innerHTML = "ODD";
+								   }else if(a == 0){
+										 document.getElementById('hello').innerHTML = "neutral integer";
+										 }else{document.getElementById('hello').innerHTML = "EVEN";
+								   }
+					}
+			</script>
+			<div id="hello"> </div>
+		</div>
+	</body>
+</html>
